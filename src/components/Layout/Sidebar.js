@@ -61,7 +61,9 @@ const navComponents = [
 ];
 
 const navContents = [
-  { to: '/typography', name: 'Projects', exact: false, Icon: MdTextFields },
+  { to: '/formsuser', name: 'Profile', exact: false, Icon: MdExtension },
+  { to: '/formsproject', name: 'Projects', exact: false, Icon: MdExtension },
+  { to: '/typography', name: 'Test', exact: false, Icon: MdAccountCircle },
 ];
 
 const pageContents = [

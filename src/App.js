@@ -23,6 +23,8 @@ import React from 'react';
 import componentQueries from 'react-component-queries';
 import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
 import './styles/reduction.scss';
+import FormUser from './pages/UserManage';
+import FormProject from './pages/project';
 
 const getBasename = () => {
   return `/${process.env.PUBLIC_URL.split('/').pop()}`;
@@ -128,11 +130,24 @@ class App extends React.Component {
               layout={MainLayout}
               component={ModalPage}
             />
+
             <LayoutRoute
               exact
               path="/forms"
               layout={MainLayout}
               component={FormPage}
+            />
+            <LayoutRoute
+              exact
+              path="/formsuser"
+              layout={MainLayout}
+              component={FormUser}
+            />
+            <LayoutRoute
+              exact
+              path="/formsproject"
+              layout={MainLayout}
+              component={FormProject}
             />
             <LayoutRoute
               exact

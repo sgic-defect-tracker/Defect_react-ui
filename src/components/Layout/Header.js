@@ -143,9 +143,6 @@ class Header extends React.Component {
                     <MdHelp /> Help
                   </ListGroupItem>
                   <ListGroupItem tag="button" action className="border-light">
-                    {/* const pageContents = [
-  { to: '/login', name: 'login / signup', exact: false, Icon: MdAccountCircle },
-]; */}
                     <MdExitToApp /> Signout
                   </ListGroupItem>
                 </ListGroup>
